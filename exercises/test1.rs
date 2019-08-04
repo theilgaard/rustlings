@@ -9,6 +9,13 @@
 
 // Put your function here!
 // fn ..... {
+fn calculate_price(n: i32) -> i32{
+    if n > 40 {
+        n
+    } else {
+        n * 2
+    }
+}
 
 // Don't modify this function!
 #[test]
@@ -16,6 +23,6 @@ fn verify_test() {
     let price1 = calculate_price(55);
     let price2 = calculate_price(40);
 
-    assert_eq!(55, price1);
-    assert_eq!(80, price2);
+    assert_eq!(price1, 55);
+    assert_eq!(price2, 80);
 }
